@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CDCDCD;
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 1px #868686;
+    background-color: #0D9FFD;
+}
+
+@font-face {
+    font-family: "Nunito-Light";
+    src: url(fonts/Nunito-Light.ttf);
+}
+
+#main, #main select, #main span, #main input {
+    font-family: Nunito-Light, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #282828;
+}
+
+#main input, #main select {
+    background-color: #0DBFFF;
+    border: none;
+    box-shadow: 2px 2px 1px #0D6AAA;
+}
+
+.block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blockSelect, #blockInput {
+    border-bottom: 1px solid #000000;
+}
+
+#blockInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#blockInput input[type="number"] {
+    max-width: 240px;
+}
